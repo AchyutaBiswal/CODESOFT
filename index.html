@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Achyuta Biswal, Computer Science Engineering student and aspiring Java Full Stack Developer.">
+  <title>Achyuta Biswal | Java Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-loader" aria-label="Loading portfolio">
+    <div class="loader-orbit">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="logo" href="#home" aria-label="Achyuta Biswal home">
+        <span>A</span>chyuta
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#achievements">Achievements</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="floating-icon icon-java"><i class="fa-brands fa-java"></i></div>
+      <div class="floating-icon icon-code"><i class="fa-solid fa-code"></i></div>
+      <div class="floating-icon icon-db"><i class="fa-solid fa-database"></i></div>
+
+      <div class="hero-content" data-aos="fade-up">
+        <p class="eyebrow">Aspiring Full Stack Java Developer</p>
+        <h1>Hi, I'm <span>Achyuta Biswal</span></h1>
+        <p class="typing-line" aria-label="Java Full Stack Developer | Spring Boot Backend Developer | Problem Solver">
+          <span id="typing-text"></span><span class="typing-caret">|</span>
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">
+            <i class="fa-solid fa-layer-group"></i>
+            View Projects
+          </a>
+          <a class="btn secondary" href="resume.pdf" download>
+            <i class="fa-solid fa-download"></i>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="zoom-in" data-aos-delay="250">
+        <div class="profile-frame">
+          <img src="images/profile-photo.jpeg" alt="Professional profile photo of Achyuta Biswal">
+        </div>
+        <div class="status-chip">
+          <i class="fa-solid fa-circle-check"></i>
+          Open to internships
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">About Me</p>
+        <h2>Building scalable Java backends and practical full stack systems.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="glass-card about-card" data-aos="fade-right">
+          <h3>Achyuta Biswal</h3>
+          <p class="role">Computer Science Engineering Student</p>
+          <p>
+            Enthusiastic Computer Science undergraduate with strong skills in Full Stack Java Development.
+            Passionate about creating scalable applications, REST APIs, and database-driven backend systems using
+            Java, Spring Boot, Docker, Kafka, and MySQL.
+          </p>
+          <div class="about-tags" aria-label="Core interests">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>REST APIs</span>
+            <span>Microservices</span>
+            <span>Docker</span>
+          </div>
+        </article>
+
+        <div class="timeline glass-card" data-aos="fade-left">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <p class="timeline-date">Current</p>
+            <h3>Bachelor of Technology</h3>
+            <p>3rd Year Computer Science Engineering at GIET, Baniatangi under Biju Pattnaik University of Technology. Graduation Year: 2027.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <p class="timeline-date">Focus Area</p>
+            <h3>Full Stack Java Development</h3>
+            <p>Spring Boot APIs, MVC architecture, database integration, microservices, Docker, Kafka, and DSA in Java.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Experience</p>
+        <h2>Internships, Courses, and Hackathon Work</h2>
+      </div>
+      <div class="experience-grid">
+        <article class="glass-card experience-card featured" data-aos="fade-up">
+          <div class="experience-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <p class="experience-meta">EduSkills - AICTE | January - March 2026</p>
+          <h3>Java Full Stack Development Intern</h3>
+          <p>
+            Completed a 10-week Java Full Stack Development With Project Virtual Internship through the National
+            Internship Portal and EduSkills Academy, earning Grade O.
+          </p>
+          <ul class="experience-points">
+            <li>Built full-stack modules with Spring Boot, JPA, MySQL, MVC architecture, and REST APIs.</li>
+            <li>Strengthened backend development, database integration, and problem-solving skills.</li>
+          </ul>
+          <a class="certificate-link" href="assets/java-full-stack-virtual-internship.pdf" target="_blank" rel="noreferrer">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+        <article class="glass-card experience-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="experience-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <p class="experience-meta">EduSkills - AICTE | October - December 2025</p>
+          <h3>GEN-AI Virtual Internship</h3>
+          <p>
+            Completed a 10-week Generative AI virtual internship with curriculum provided by AWS Academy, earning
+            Grade O.
+          </p>
+          <ul class="experience-points">
+            <li>Learned generative AI foundations, cloud learning workflows, and applied AI concepts.</li>
+            <li>Certificate ID: 83614fb52c456f3532b9b02e074687cb.</li>
+          </ul>
+          <a class="certificate-link" href="assets/gen-ai-virtual-internship.pdf" target="_blank" rel="noreferrer">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+        <article class="glass-card experience-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="experience-icon"><i class="fa-solid fa-robot"></i></div>
+          <p class="experience-meta">EduSkills - AICTE | July - September 2024</p>
+          <h3>AI-ML Virtual Internship</h3>
+          <p>
+            Completed a 10-week AI-ML virtual internship supported by India Edu Program and Google for Developers,
+            earning Grade P.
+          </p>
+          <ul class="experience-points">
+            <li>Explored machine learning fundamentals, AI workflows, and practical technology learning.</li>
+            <li>Certificate ID: 016db8dd502de56ed44216fa29e9ef12.</li>
+          </ul>
+          <a class="certificate-link" href="assets/ai-ml-virtual-internship.pdf" target="_blank" rel="noreferrer">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+        <article class="glass-card experience-card" data-aos="fade-up">
+          <div class="experience-icon"><i class="fa-solid fa-trophy"></i></div>
+          <p class="experience-meta">INNOVATE X 5.0 | National Level Hackathon</p>
+          <h3>BrainWave Builders</h3>
+          <p>
+            Participated in a 30-hour national level hackathon at Gandhi Institute for Education and Technology,
+            Baniatangi, Odisha.
+          </p>
+          <ul class="experience-points">
+            <li>Collaborated with team BrainWave Builders in a time-bound innovation environment.</li>
+            <li>Focused on problem solving, team coordination, and rapid project ideation.</li>
+          </ul>
+        </article>
+        <article class="glass-card experience-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="experience-icon"><i class="fa-solid fa-certificate"></i></div>
+          <p class="experience-meta">Certifications</p>
+          <h3>Java Full Stack Development Program</h3>
+          <p>
+            Completed Java Full Stack Development Program certification from Code For Success, strengthening Java,
+            Spring Boot, REST APIs, and backend development fundamentals.
+          </p>
+          <ul class="experience-points">
+            <li>Core areas: Java, DSA in Java, Spring Boot, MySQL, JDBC, Maven, Git, and Docker.</li>
+            <li>Aligned with backend project work such as e-commerce APIs and booking systems.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="education section" id="education">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Education</p>
+        <h2>Academic Foundation</h2>
+      </div>
+      <div class="education-grid">
+        <article class="glass-card education-card" data-aos="zoom-in">
+          <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Bachelor of Technology</h3>
+          <p>Computer Science Engineering, GIET Baniatangi, BPUT Rourkela</p>
+          <span>Currently Pursuing - 2027</span>
+        </article>
+        <article class="glass-card education-card" data-aos="zoom-in" data-aos-delay="120">
+          <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Core Learning</h3>
+          <p>Java, Spring Boot, REST APIs, Microservices, Data Structures, Algorithms, and Database Systems</p>
+          <span>Career Focused</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Skills</p>
+        <h2>Technologies I Work With</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="glass-card skill-group" data-aos="fade-up">
+          <h3><i class="fa-solid fa-palette"></i> Frontend</h3>
+          <div class="skill-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+          </div>
+        </article>
+        <article class="glass-card skill-group" data-aos="fade-up" data-aos-delay="100">
+          <h3><i class="fa-solid fa-server"></i> Backend</h3>
+          <div class="skill-list">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>REST APIs</span>
+            <span>Microservices</span>
+            <span>JPA</span>
+            <span>Kafka</span>
+          </div>
+        </article>
+        <article class="glass-card skill-group" data-aos="fade-up" data-aos-delay="200">
+          <h3><i class="fa-solid fa-database"></i> Database</h3>
+          <div class="skill-list">
+            <span>MySQL</span>
+            <span>JDBC</span>
+          </div>
+        </article>
+        <article class="glass-card skill-group" data-aos="fade-up" data-aos-delay="300">
+          <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
+          <div class="skill-list">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Maven</span>
+            <span>Docker</span>
+            <span>VS Code</span>
+            <span>Postman</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected Work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="glass-card project-card" data-aos="fade-up">
+          <div class="project-top">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Project 1</span>
+          </div>
+          <h3>E-Commerce Backend System</h3>
+          <p>Scalable REST APIs using Spring Boot, JPA, and MySQL for product, order, and payment management with Razorpay integration and Gmail SMTP notifications.</p>
+          <div class="project-stack">
+            <span>Spring Boot</span>
+            <span>JPA</span>
+            <span>MySQL</span>
+            <span>Razorpay</span>
+          </div>
+        </article>
+        <article class="glass-card project-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="project-top">
+            <i class="fa-solid fa-code-branch"></i>
+            <span>Project 2</span>
+          </div>
+          <h3>BookMyShow Backend</h3>
+          <p>RESTful APIs for movie listings, seat booking, and real-time availability with optimized MySQL schemas and email booking confirmations.</p>
+          <div class="project-stack">
+            <span>Spring Boot</span>
+            <span>JPA</span>
+            <span>MySQL</span>
+            <span>SMTP</span>
+          </div>
+        </article>
+        <article class="glass-card project-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="project-top">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Project 3</span>
+          </div>
+          <h3>Java Full Stack Internship Project</h3>
+          <p>Full-stack application built during the EduSkills AICTE internship using Spring Boot, JPA, MySQL, MVC architecture, and RESTful API design.</p>
+          <div class="project-stack">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>MVC</span>
+            <span>MySQL</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="achievements section" id="achievements">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Achievements</p>
+        <h2>Progress In Motion</h2>
+      </div>
+      <div class="counter-grid">
+        <article class="glass-card counter-card" data-aos="zoom-in">
+          <strong><span class="counter" data-target="100">0</span>+</strong>
+          <p>DSA Problems Solved</p>
+        </article>
+        <article class="glass-card counter-card" data-aos="zoom-in" data-aos-delay="120">
+          <strong><span class="counter" data-target="10">0</span></strong>
+          <p>Weeks Java Full Stack Internship</p>
+        </article>
+        <article class="glass-card counter-card" data-aos="zoom-in" data-aos-delay="240">
+          <strong><i class="fa-brands fa-java"></i></strong>
+          <p>Java Full Stack Developer</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-heading" data-aos="fade-up">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's Build Something Useful</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="glass-card contact-info" data-aos="fade-right">
+          <a href="mailto:achyutabiswal977@gmail.com"><i class="fa-solid fa-envelope"></i> achyutabiswal977@gmail.com</a>
+          <a href="tel:+917846807494"><i class="fa-solid fa-phone"></i> +91 7846807494</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <form class="glass-card contact-form" data-aos="fade-left">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="your.email@example.com" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell me about your project or opportunity" required></textarea>
+          </label>
+          <button class="btn primary send-btn" type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Message
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Achyuta Biswal. All Rights Reserved.</p>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
