@@ -6,71 +6,49 @@
 **Internship:** CodSoft Web Development Internship
 **Batch:** June Batch C3
 
----
-
 ## 📌 Level 1 Tasks
 
 ### 🚀 Task 1: Personal Portfolio Website
 
-A modern, responsive, and animated portfolio website built using HTML, CSS, and JavaScript.
-
-### Features
-
-* Responsive Design
-* Modern UI/UX
-* Animated Hero Section
-* About Me Section
-* Skills Showcase
-* Project Gallery
+* Responsive Portfolio Website
+* Modern UI/UX Design
+* Skills Section
+* Projects Showcase
 * Resume Download
 * Contact Section
-* Smooth Scrolling
-* Mobile Friendly
 
-### Technologies Used
+### 🚀 Task 2: Landing Page
+
+* Responsive Landing Page
+* Attractive User Interface
+* Smooth Navigation
+* Mobile Friendly Design
+
+### 🚀 Task 3: Calculator
+
+* Basic Arithmetic Operations
+* Interactive UI
+* Responsive Design
+* Built with JavaScript
+
+## 🛠 Technologies Used
 
 * HTML5
 * CSS3
 * JavaScript
 
----
+## 🔗 Repository
 
-## 📂 Project Structure
+GitHub Repository: https://github.com/AchyutaBiswal/CODESOFT
 
-```text
-Portfolio/
-│
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── images/
-├── assets/
-└── resume.pdf
-```
+## 🌐 Live Portfolio
 
----
-
-## 🔗 GitHub Repository
-
-Repository Link:
-https://github.com/AchyutaBiswal/CODESOFT
-
----
-
-## 🎯 Internship Objective
-
-This project was developed as part of the CodSoft Web Development Internship Program to enhance frontend development skills and create a professional portfolio website.
-
----
+https://achyutabiswal.github.io/CODESOFT/
 
 ## 👤 Author
 
-**Achyuta Biswal**
+Achyuta Biswal
 
 GitHub: https://github.com/AchyutaBiswal
-
----
 
 ⭐ Thank you for visiting this repository.
