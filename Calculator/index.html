@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A premium responsive scientific calculator built with HTML, CSS, and vanilla JavaScript."
+    />
+    <title>Achyuta Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <main class="app-shell">
+      <section class="calculator-card" aria-label="Scientific calculator">
+        <div class="brand-row">
+          <div>
+            <p class="eyebrow">Scientific</p>
+            <h1>Achyuta Calculator</h1>
+          </div>
+          <div class="quick-actions" aria-label="Calculator settings">
+            <button
+              class="icon-button"
+              type="button"
+              id="soundToggle"
+              aria-label="Toggle sound effects"
+              title="Toggle sound"
+            >
+              <span aria-hidden="true">♪</span>
+            </button>
+            <button
+              class="icon-button"
+              type="button"
+              id="themeToggle"
+              aria-label="Toggle theme"
+              title="Toggle theme"
+            >
+              <span aria-hidden="true">☾</span>
+            </button>
+          </div>
+        </div>
+
+        <section class="display-panel" aria-live="polite">
+          <div class="expression" id="expressionDisplay">Ready</div>
+          <div class="result-row">
+            <output class="result" id="resultDisplay">0</output>
+            <button
+              class="copy-button"
+              type="button"
+              id="copyResult"
+              aria-label="Copy result"
+              title="Copy result"
+            >
+              Copy
+            </button>
+          </div>
+          <div class="status-line" id="statusLine">Memory: 0</div>
+        </section>
+
+        <section class="keypad" aria-label="Calculator buttons">
+          <button class="key memory" type="button" data-action="memory-clear">MC</button>
+          <button class="key memory" type="button" data-action="memory-recall">MR</button>
+          <button class="key memory" type="button" data-action="memory-add">M+</button>
+          <button class="key memory" type="button" data-action="memory-subtract">M-</button>
+
+          <button class="key utility" type="button" data-action="clear-entry">CE</button>
+          <button class="key utility" type="button" data-action="clear">C</button>
+          <button class="key utility" type="button" data-action="backspace">⌫</button>
+          <button class="key operator" type="button" data-operator="÷">÷</button>
+
+          <button class="key" type="button" data-number="7">7</button>
+          <button class="key" type="button" data-number="8">8</button>
+          <button class="key" type="button" data-number="9">9</button>
+          <button class="key operator" type="button" data-operator="×">×</button>
+
+          <button class="key" type="button" data-number="4">4</button>
+          <button class="key" type="button" data-number="5">5</button>
+          <button class="key" type="button" data-number="6">6</button>
+          <button class="key operator" type="button" data-operator="-">−</button>
+
+          <button class="key" type="button" data-number="1">1</button>
+          <button class="key" type="button" data-number="2">2</button>
+          <button class="key" type="button" data-number="3">3</button>
+          <button class="key operator" type="button" data-operator="+">+</button>
+
+          <button class="key utility" type="button" data-action="toggle-sign">+/−</button>
+          <button class="key" type="button" data-number="0">0</button>
+          <button class="key" type="button" data-action="decimal">.</button>
+          <button class="key equals" type="button" data-action="equals">=</button>
+
+          <button class="key scientific" type="button" data-action="sqrt">√</button>
+          <button class="key scientific" type="button" data-action="square">x²</button>
+          <button class="key scientific" type="button" data-operator="^">xʸ</button>
+          <button class="key scientific" type="button" data-action="percent">%</button>
+
+          <button class="key scientific" type="button" data-action="reciprocal">1/x</button>
+          <button class="key scientific" type="button" data-action="factorial">!</button>
+          <button class="key scientific" type="button" data-operator="mod">mod</button>
+          <button class="key scientific" type="button" data-action="absolute">abs</button>
+        </section>
+      </section>
+
+      <aside class="history-card" aria-label="Calculation history">
+        <div class="history-header">
+          <div>
+            <p class="eyebrow">Recent</p>
+            <h2>History</h2>
+          </div>
+          <button class="clear-history" type="button" id="clearHistory">Clear</button>
+        </div>
+        <ol class="history-list" id="historyList"></ol>
+        <p class="empty-history" id="emptyHistory">No calculations yet.</p>
+      </aside>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
