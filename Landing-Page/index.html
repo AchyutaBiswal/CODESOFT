@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillForge is an AI-powered learning platform for programming, web development, AI, and data science with personalized paths, mentors, and career support.">
+  <meta name="keywords" content="SkillForge, AI learning platform, programming courses, web development, data science, machine learning, coding bootcamp">
+  <meta name="author" content="SkillForge">
+  <meta property="og:title" content="SkillForge - Master In-Demand Skills with AI">
+  <meta property="og:description" content="Personalized learning paths, interactive labs, real projects, certifications, and placement support for modern tech careers.">
+  <meta property="og:type" content="website">
+  <title>SkillForge | AI-Powered Learning Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="loader" aria-label="Loading SkillForge">
+    <div class="loader__ring"></div>
+    <span>SkillForge</span>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#home" class="logo" aria-label="SkillForge home">
+        <span class="logo__mark">SF</span>
+        <span>SkillForge</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <canvas class="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero__glow hero__glow--one"></div>
+      <div class="hero__glow hero__glow--two"></div>
+
+      <div class="hero__content reveal">
+        <p class="eyebrow">AI-powered career acceleration</p>
+        <h1 id="hero-title">Master In-Demand Skills with AI</h1>
+        <p class="hero__subtitle">Learn programming, web development, AI, and data science through personalized learning paths.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary ripple" href="#pricing">Get Started</a>
+          <a class="btn btn--ghost ripple" href="#courses">
+            <span class="btn__play" aria-hidden="true"></span>
+            Watch Demo
+          </a>
+        </div>
+        <div class="hero__trust" aria-label="SkillForge platform highlights">
+          <span>AI mentor</span>
+          <span>Live labs</span>
+          <span>Career-ready projects</span>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="orbit orbit--one"></div>
+        <div class="orbit orbit--two"></div>
+        <div class="dashboard-card dashboard-card--main">
+          <div class="dashboard-card__header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="learning-path">
+            <div>
+              <p>Personalized Path</p>
+              <strong>AI Engineer Track</strong>
+            </div>
+            <span class="path-score">92%</span>
+          </div>
+          <div class="path-bars">
+            <span style="--width: 88%"></span>
+            <span style="--width: 72%"></span>
+            <span style="--width: 94%"></span>
+          </div>
+          <div class="code-window" aria-hidden="true">
+            <code>const skills = forge.ai.plan(user.goal);</code>
+            <code>mentor.review(project);</code>
+            <code>career.launch("full-stack");</code>
+          </div>
+        </div>
+        <div class="floating-card floating-card--mentor">
+          <span class="floating-card__icon">AI</span>
+          <div>
+            <strong>AI Coach</strong>
+            <p>Next lesson unlocked</p>
+          </div>
+        </div>
+        <div class="floating-card floating-card--badge">
+          <span class="floating-card__icon">98</span>
+          <div>
+            <strong>Lab Score</strong>
+            <p>Ready for review</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features" aria-labelledby="features-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Platform advantages</p>
+        <h2 id="features-title">Everything you need to build job-ready skills</h2>
+        <p>SkillForge combines adaptive AI guidance, practical coding environments, and career outcomes into one focused learning experience.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="glass-card feature-card reveal">
+          <span class="icon icon--assistant"></span>
+          <h3>AI Learning Assistant</h3>
+          <p>Get instant explanations, lesson recommendations, and guided debugging support tailored to your progress.</p>
+        </article>
+        <article class="glass-card feature-card reveal">
+          <span class="icon icon--labs"></span>
+          <h3>Interactive Coding Labs</h3>
+          <p>Practice directly in browser-based labs with checkpoints, smart hints, and automated code feedback.</p>
+        </article>
+        <article class="glass-card feature-card reveal">
+          <span class="icon icon--roadmap"></span>
+          <h3>Career Roadmaps</h3>
+          <p>Follow structured paths for frontend, backend, full stack, AI, and data science roles.</p>
+        </article>
+        <article class="glass-card feature-card reveal">
+          <span class="icon icon--projects"></span>
+          <h3>Project-Based Learning</h3>
+          <p>Build portfolio-ready projects that mirror real product workflows and technical interviews.</p>
+        </article>
+        <article class="glass-card feature-card reveal">
+          <span class="icon icon--cert"></span>
+          <h3>Industry Certifications</h3>
+          <p>Earn verified certificates that showcase your completed courses, projects, and practical skill level.</p>
+        </article>
+        <article class="glass-card feature-card reveal">
+          <span class="icon icon--placement"></span>
+          <h3>Placement Support</h3>
+          <p>Prepare with resume reviews, mock interviews, hiring challenges, and curated job opportunities.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats section" aria-label="SkillForge statistics">
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <strong class="counter" data-target="50000">0</strong><span>+</span>
+          <p>Students</p>
+        </div>
+        <div class="stat-card">
+          <strong class="counter" data-target="500">0</strong><span>+</span>
+          <p>Courses</p>
+        </div>
+        <div class="stat-card">
+          <strong class="counter" data-target="95">0</strong><span>%</span>
+          <p>Success Rate</p>
+        </div>
+        <div class="stat-card">
+          <strong class="counter" data-target="100">0</strong><span>+</span>
+          <p>Mentors</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses section" id="courses" aria-labelledby="courses-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Popular courses</p>
+        <h2 id="courses-title">Choose a path that matches your ambition</h2>
+        <p>Every course includes guided lessons, practice labs, milestone projects, and progress insights powered by SkillForge AI.</p>
+      </div>
+
+      <div class="course-grid">
+        <article class="course-card reveal">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Developer working on Java full stack code">
+          <div class="course-card__body">
+            <span>24 Weeks</span>
+            <h3>Java Full Stack Development</h3>
+            <p>Master Java, Spring Boot, APIs, databases, and production-grade web applications.</p>
+            <div class="course-card__footer">
+              <span class="rating">★★★★★ 4.9</span>
+              <button class="btn btn--small ripple" type="button">Enroll</button>
+            </div>
+          </div>
+        </article>
+        <article class="course-card reveal">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80" alt="Frontend development workspace with code editor">
+          <div class="course-card__body">
+            <span>16 Weeks</span>
+            <h3>Frontend Development</h3>
+            <p>Create responsive interfaces with HTML, CSS, JavaScript, accessibility, and UI systems.</p>
+            <div class="course-card__footer">
+              <span class="rating">★★★★★ 4.8</span>
+              <button class="btn btn--small ripple" type="button">Enroll</button>
+            </div>
+          </div>
+        </article>
+        <article class="course-card reveal">
+          <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?auto=format&fit=crop&w=900&q=80" alt="Algorithms and data structures notes on a desk">
+          <div class="course-card__body">
+            <span>12 Weeks</span>
+            <h3>Data Structures &amp; Algorithms</h3>
+            <p>Strengthen problem solving with arrays, trees, graphs, dynamic programming, and patterns.</p>
+            <div class="course-card__footer">
+              <span class="rating">★★★★★ 4.9</span>
+              <button class="btn btn--small ripple" type="button">Enroll</button>
+            </div>
+          </div>
+        </article>
+        <article class="course-card reveal">
+          <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=900&q=80" alt="Machine learning visualization on a laptop">
+          <div class="course-card__body">
+            <span>20 Weeks</span>
+            <h3>Machine Learning</h3>
+            <p>Learn Python, model training, neural networks, deployment, and applied AI workflows.</p>
+            <div class="course-card__footer">
+              <span class="rating">★★★★★ 4.8</span>
+              <button class="btn btn--small ripple" type="button">Enroll</button>
+            </div>
+          </div>
+        </article>
+        <article class="course-card reveal">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Backend server infrastructure for Spring Boot learning">
+          <div class="course-card__body">
+            <span>14 Weeks</span>
+            <h3>Spring Boot Backend</h3>
+            <p>Build secure REST APIs, microservices, authentication, testing, and cloud-ready backends.</p>
+            <div class="course-card__footer">
+              <span class="rating">★★★★★ 4.7</span>
+              <button class="btn btn--small ripple" type="button">Enroll</button>
+            </div>
+          </div>
+        </article>
+        <article class="course-card reveal">
+          <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=900&q=80" alt="React development interface on a modern screen">
+          <div class="course-card__body">
+            <span>10 Weeks</span>
+            <h3>React Development</h3>
+            <p>Create scalable React apps with hooks, routing, state management, APIs, and deployment.</p>
+            <div class="course-card__footer">
+              <span class="rating">★★★★★ 4.9</span>
+              <button class="btn btn--small ripple" type="button">Enroll</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials section" aria-labelledby="testimonials-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Student outcomes</p>
+        <h2 id="testimonials-title">Learners are shipping real projects faster</h2>
+      </div>
+
+      <div class="testimonial-slider reveal" aria-live="polite">
+        <div class="testimonial-track">
+          <article class="testimonial-card glass-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Portrait of Priya Sharma">
+            <div>
+              <h3>Priya Sharma</h3>
+              <span class="rating">★★★★★</span>
+              <p>SkillForge helped me turn scattered tutorials into a clear roadmap. The AI assistant kept me moving whenever I got stuck in React projects.</p>
+            </div>
+          </article>
+          <article class="testimonial-card glass-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Portrait of Arjun Mehta">
+            <div>
+              <h3>Arjun Mehta</h3>
+              <span class="rating">★★★★★</span>
+              <p>The coding labs felt close to real work. I built backend APIs, practiced interviews, and landed a junior developer role within three months.</p>
+            </div>
+          </article>
+          <article class="testimonial-card glass-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Portrait of Neha Rao">
+            <div>
+              <h3>Neha Rao</h3>
+              <span class="rating">★★★★★</span>
+              <p>The machine learning path gave me structure, mentor reviews, and portfolio projects I could confidently discuss in interviews.</p>
+            </div>
+          </article>
+        </div>
+        <div class="slider-dots" aria-label="Testimonial controls"></div>
+      </div>
+    </section>
+
+    <section class="pricing section" id="pricing" aria-labelledby="pricing-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Simple pricing</p>
+        <h2 id="pricing-title">Start free, upgrade when you are ready</h2>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card glass-card reveal">
+          <h3>Starter</h3>
+          <strong>Free</strong>
+          <p>Basic Courses</p>
+          <ul>
+            <li>Foundation lessons</li>
+            <li>Community access</li>
+            <li>Progress dashboard</li>
+          </ul>
+          <a class="btn btn--ghost ripple" href="#contact">Choose Starter</a>
+        </article>
+        <article class="price-card price-card--featured glass-card reveal">
+          <span class="plan-badge">Most Popular</span>
+          <h3>Pro</h3>
+          <strong>₹999/month</strong>
+          <p>All Courses + Projects</p>
+          <ul>
+            <li>Complete course library</li>
+            <li>Project reviews</li>
+            <li>AI learning assistant</li>
+            <li>Certification exams</li>
+          </ul>
+          <a class="btn btn--primary ripple" href="#contact">Choose Pro</a>
+        </article>
+        <article class="price-card glass-card reveal">
+          <h3>Premium</h3>
+          <strong>₹1999/month</strong>
+          <p>Everything Included</p>
+          <ul>
+            <li>Dedicated mentorship</li>
+            <li>Placement support</li>
+            <li>Mock interviews</li>
+            <li>Priority project feedback</li>
+          </ul>
+          <a class="btn btn--ghost ripple" href="#contact">Choose Premium</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq section" aria-labelledby="faq-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-title">Everything learners ask before joining</h2>
+      </div>
+
+      <div class="accordion reveal">
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger" aria-expanded="false">
+            How does SkillForge work?
+            <span></span>
+          </button>
+          <div class="accordion-panel">
+            <p>SkillForge evaluates your goal, current skill level, and available time, then creates a guided learning path with lessons, labs, projects, and AI-powered feedback.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger" aria-expanded="false">
+            Are certificates provided?
+            <span></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Yes. Learners receive verified certificates after completing required lessons, assessments, and project milestones for each course.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger" aria-expanded="false">
+            Is mentorship available?
+            <span></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Mentorship is available on Premium plans, including project reviews, career guidance, interview practice, and personalized improvement plans.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger" aria-expanded="false">
+            Can I access courses on mobile?
+            <span></span>
+          </button>
+          <div class="accordion-panel">
+            <p>Yes. SkillForge is fully responsive, so lessons, dashboards, resources, and course progress are accessible across mobile, tablet, and desktop screens.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="contact__content reveal">
+        <p class="eyebrow">Contact us</p>
+        <h2 id="contact-title">Ready to forge your next skill?</h2>
+        <p>Send the SkillForge team a message and get guidance on the best course plan for your career goal.</p>
+      </div>
+
+      <form class="contact-form glass-card reveal" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us what you want to learn" required></textarea>
+
+        <button class="btn btn--primary ripple" type="submit">Submit</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <a href="#home" class="logo">
+          <span class="logo__mark">SF</span>
+          <span>SkillForge</span>
+        </a>
+        <p>AI-powered learning paths for ambitious developers, analysts, and future tech leaders.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="#features">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <p class="footer__bottom">© 2026 SkillForge. All rights reserved.</p>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
